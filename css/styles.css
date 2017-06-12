@@ -1,0 +1,109 @@
+.holygrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.holygrail-body {
+  display: flex;
+  flex: 1;
+  border: 2px solid black;
+  flex-direction: column;
+}
+
+.holygrail-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 2px solid black;
+}
+
+.holygrail-nav, .holygrail-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  border: 2px solid black;
+}
+
+.holygrail-nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+.holygrail-nav ul {
+  list-style-type: none;
+}
+
+
+.holygrail, .holygrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.owl-parent {
+  height: 500px;
+  background-color: lightblue;
+  display: flex;
+}
+
+.media-object1 {
+  display: flex;
+  width: 100%;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.media-object1 img {
+  /*flex: 1;*/
+  margin-right: 10px;
+}
+
+.media-object1 p {
+  flex: 1;
+}
+
+.the-donald {
+  height: 500px;
+  background-color: yellow;
+  display: flex;
+}
+
+.media-object2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.media-object2 img {
+  margin-left: 10px;
+}
+.media-object2 p {
+  order: -1;
+}
+
+
+.media-object3 {
+  width: 100%;
+  height: 500px;
+  background-color: tomato;
+}
+
+.media-object3 img {
+  width: 100px;
+}
+
+
+
+@media (min-width: 768px) {
+  .holygrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .holygrail-content {
+    flex: 1;
+  }
+  .holygrail-nav, .holygrail-ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
